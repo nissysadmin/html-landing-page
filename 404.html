@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | NisSys Softwares</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-gray-300">
+    <!-- Header Section -->
+    <header class="bg-[#7949cb] text-white py-6">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <!-- Logo -->
+            <a href="/">
+                <h1 class="flex flex-col font-bold text-center leading-none -mt-2">
+                    <span class="logo text-xl">NisSys</span> 
+                    <span class="text-[11px]">Softwares</span>
+                </h1>
+            </a>
+
+            <!-- Hamburger Button -->
+            <button id="menu-toggle" class="block md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav id="menu" class="hidden md:flex space-x-6 md:space-x-6">
+                <a href="#about" class="hover:text-gray-400">About</a>
+                <a href="#services" class="hover:text-gray-400">Services</a>
+                <a href="#portfolio" class="hover:text-gray-400">Portfolio</a>
+                <a href="#contact" class="hover:text-gray-400">Contact</a>
+            </nav>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-2 mt-4 px-6 bg-[#7949cb]">
+            <a href="#about" class="hover:text-gray-400">About</a>
+            <a href="#services" class="hover:text-gray-400">Services</a>
+            <a href="#portfolio" class="hover:text-gray-400">Portfolio</a>
+            <a href="#contact" class="hover:text-gray-400">Contact</a>
+        </div>
+    </header>
+
+    <!-- 404 Error Section -->
+    <section class="text-center py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-6xl font-bold text-white mb-4">404</h2>
+            <p class="text-lg text-gray-400 mb-8">Oops! The page you're looking for doesn't exist.</p>
+            <a href="/" class="bg-[#7949cb] text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-700">
+                Go Back Home
+            </a>
+        </div>
+    </section>
+
+<!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center px-6">
+            <p class="text-sm">&copy; 2024 NisSys Softwares. All Rights Reserved.</p>
+            <div class="mt-4">
+                <a href="https://facebook.com" class="text-[#7949cb] mx-2 hover:text-gray-400">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="https://twitter.com" class="text-[#7949cb] mx-2 hover:text-gray-400">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="https://linkedin.com" class="text-[#7949cb] mx-2 hover:text-gray-400">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://instagram.com" class="text-[#7949cb] mx-2 hover:text-gray-400">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuToggle.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

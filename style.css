@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'NisSysFont';
+    src: url('nissys-font.ttf') format('truetype');
+}
+
+.logo {
+    font-family: 'NisSysFont', sans-serif; /* Fallback to sans-serif */
+}
+
+/* Typewriter Animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+}
+
+/* Typewriter Effect */
+.typewriter {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%; /* Ensures it fits within the screen */
+    white-space: normal; /* Allows text wrapping */
+    line-height: 1.5; /* Ensures proper spacing for multiple lines */
+    border-right: 4px solid white;
+    animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
+    padding-right: 10px; /* Adds spacing for the blinking cursor */
+}

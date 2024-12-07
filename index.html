@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NisSys Softwares</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-gray-300">
+    <!-- Header Section -->
+    <header class="bg-[#7949cb] text-white py-6">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <!-- Logo -->
+            <a href="/">
+            <h1 class="flex flex-col font-bold text-center leading-none -mt-2">
+                <span class="logo text-xl">NisSys</span> 
+                <span class="text-[11px]">Softwares</span>
+            </h1>
+            </a>
+
+            <!-- Hamburger Button -->
+            <button id="menu-toggle" class="block md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav id="menu" class="hidden md:flex space-x-6 md:space-x-6">
+                <a href="#about" class="hover:text-gray-400">About</a>
+                <a href="#services" class="hover:text-gray-400">Services</a>
+                <a href="#portfolio" class="hover:text-gray-400">Portfolio</a>
+                <a href="#contact" class="hover:text-gray-400">Contact</a>
+            </nav>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-2 mt-4 px-6 bg-[#7949cb]">
+            <a href="#about" class="hover:text-gray-400">About</a>
+            <a href="#services" class="hover:text-gray-400">Services</a>
+            <a href="#portfolio" class="hover:text-gray-400">Portfolio</a>
+            <a href="#contact" class="hover:text-gray-400">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-[#7949cb] text-white py-20">
+        <div class="container mx-auto flex flex-col items-center text-center px-6">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Unleashing Innovations, Crafting Futures</h2>
+            <p class="text-lg mb-8">At NisSys Softwares, we bring your ideas to life with cutting-edge technology and modern solutions.</p>
+            <a href="#contact" class="bg-white text-[#7949cb] px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-200">
+                Get Started
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto flex flex-col md:flex-row items-center px-6">
+            <div class="md:w-1/2 mb-6 md:mb-0">
+                <h3 class="text-3xl font-bold text-[#7949cb] mb-4">Who We Are</h3>
+                <p class="text-gray-400 mb-4">
+                    NisSys Softwares is a forward-thinking software development company, committed to creating tailored solutions that align with your business goals. Our expertise spans web development, mobile apps, and innovative software solutions.
+                </p>
+                <a href="#services" class="text-[#7949cb] font-semibold hover:underline">Learn More</a>
+            </div>
+            <div class="md:w-1/2">
+                <img src="nissys-img1.avif" alt="About Us" class="rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-gray-800 py-20">
+        <div class="container mx-auto text-center px-6">
+            <h3 class="text-3xl font-bold text-[#7949cb] mb-10">Our Services</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <i class="fa fa-code text-[#7949cb] text-4xl mb-4"></i>
+                    <h4 class="text-xl font-semibold text-white mb-2">Web Development</h4>
+                    <p class="text-gray-400">Responsive and modern websites tailored for your business.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <i class="fa fa-mobile-alt text-[#7949cb] text-4xl mb-4"></i>
+                    <h4 class="text-xl font-semibold text-white mb-2">Mobile Applications</h4>
+                    <p class="text-gray-400">Build intuitive and scalable apps for Android and iOS.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+                    <i class="fa fa-cogs text-[#7949cb] text-4xl mb-4"></i>
+                    <h4 class="text-xl font-semibold text-white mb-2">Custom Software</h4>
+                    <p class="text-gray-400">Innovative solutions designed specifically for your needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-900">
+        <div class="container mx-auto text-center px-6">
+            <h3 class="text-3xl font-bold text-[#7949cb] mb-10">Our Portfolio</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div>
+                    <img src="https://via.placeholder.com/600x400" alt="Project 1" class="rounded-lg shadow-lg mb-4">
+                    <h4 class="text-xl font-semibold text-white">Project Name</h4>
+                </div>
+                <!-- Project 2 -->
+                <div>
+                    <img src="https://via.placeholder.com/600x400" alt="Project 2" class="rounded-lg shadow-lg mb-4">
+                    <h4 class="text-xl font-semibold text-white">Project Name</h4>
+                </div>
+                <!-- Project 3 -->
+                <div>
+                    <img src="https://via.placeholder.com/600x400" alt="Project 3" class="rounded-lg shadow-lg mb-4">
+                    <h4 class="text-xl font-semibold text-white">Project Name</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-[#7949cb] text-white py-20">
+        <div class="container mx-auto text-center px-6">
+            <h3 class="text-3xl font-bold mb-8">Contact Us</h3>
+            <p class="mb-6">Ready to work with us? Get in touch today!</p>
+            <a href="mailto:contact@nissysoftwares.com" class="bg-gray-900 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-700">
+                Email Us
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center px-6">
+            <p class="text-sm">&copy; 2024 NisSys Softwares. All Rights Reserved.</p>
+            <div class="mt-4">
+                <a href="https://facebook.com" class="text-[#7949cb] mx-2 hover:text-gray-400">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="https://twitter.com" class="text-[#7949cb] mx-2 hover:text-gray-400">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="https://linkedin.com" class="text-[#7949cb] mx-2 hover:text-gray-400">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://instagram.com" class="text-[#7949cb] mx-2 hover:text-gray-400">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuToggle.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
